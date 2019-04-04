@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/form.css">
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <span class="logo-label">Трансформания</span>
+        </div>
+        <nav class="menu">
+            <a class="nav-link" href="index.html">В начало</a>
+            <a class="nav-link" href="index.html#rules">Условия</a>
+            <a class="nav-link" href="index.html#testimonials">Отзывы</a>
+            <a class="nav-link" href="index.html#about">Тренер</a>
+            <a class="nav-link" href="form.html">Запись</a>
+        </nav>
+    </header>
+    <main>
+        <h1 id="title">Заполни анкету для участия в марафоне</h1>
+        <div id="form-outer">
+            <form id="survey-form">
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="name-label" for="name">* Имя: </label>
+                    </div>
+                    <div class="rightTab"><input autofocus type="text" name="name" id="name" class="input-field"placeholder="Введите Ваше имя" required>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="phone-label" for="phone">* Номер телефона: </label>
+                    </div>
+                    <div class="rightTab"><input type="phone" name="phone" id="phone" class="input-field" placeholder="+79131234567" required>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="number-label" for="age">* Возраст: </label>
+                    </div>
+                    <div class="rightTab"><input autofocus type="number" min="1" max="125" name="age" id="number" class="input-field" placeholder="Сколько Вам лет?" required>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="number-label" for="weight">* Вес: </label>
+                    </div>
+                    <div class="rightTab"><input autofocus type="number" min="30" max="150" name="weight" id="number" class="input-field" placeholder="Укажите Ваш вес" required>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label id="number-label" for="height">* Рост: </label>
+                    </div>
+                    <div class="rightTab"><input autofocus type="number" min="120" max="220" name="height" id="number" class="input-field" placeholder="Укажите Ваш рост" required>
+                    </div>
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for="comments">
+                            Дополнительная информация
+                        </label>
+                    </div>
+                <div class="rightTab">
+                    <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="При необходимосте разместите дополнительные данные здесь"></textarea>
+                </div>
+                </div>
+                <button id="submit" type="submit">Отправить</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
